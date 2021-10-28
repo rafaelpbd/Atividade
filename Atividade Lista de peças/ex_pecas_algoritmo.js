@@ -21,4 +21,3 @@ for(let val = 0; val < listadepecas.length; val++){
     console.log(pesodapeca[val]+"g - Valor insuficiente\n")
 }
 }
-console.log()
