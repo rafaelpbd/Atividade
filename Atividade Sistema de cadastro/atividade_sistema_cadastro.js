@@ -1,4 +1,13 @@
 /*
+Algoritmo "Cadastro de eventos"
+Disciplina   : Algoritmos e Lógica de Programação - Senai - Programador Front End
+Professor   : Douglas dos Reis
+Descrição   : Cadastro de eventos
+Autor(a)    : Rafael Marques da Silva
+Data atual  : 30/10/2021
+
+ATIVIDADE DO CURSO PROGRAMADOR FRONT END DO SENAI
+
 A empresa Savinis, focada no desenvolvimento de software de alta performance, contratou você para realizar o desenvolvimento de um sistema de cadastro para eventos que será disponibilizado para o público, o que, até então, era realizado manualmente.
  
 Esse sistema terá como função principal a divulgação dos eventos para a comunidade de desenvolvimento (grupo de pessoas que tem o intuito de compartilhar ideias, projetos e conhecimentos) para que sejam consultados de forma eficiente.
@@ -33,24 +42,27 @@ Enquanto quantidades de participantes menor que 100;
 Exibir na tela lista de participantes e palestrantes por evento;
 */
 
-participantes = ["João Algoritmo", "Maria Pecê", "André Transistor"];
-evento = ["Expo CPU", "Senai Week Computer", "São Paulo Front-End Week" ];
-idade_participante = [16, 22, 35];
-data_evento = [[24,11,21],[12,12,21],[21,08,21]]
-data_atual = [30, 10, 21]
+// Listas iniciais com informaçoes dos participantes
 
-var num_participantes = 3;
+participantes = ["João Algoritmo", "Maria Pecê", "André Transistor", "Fernanda Mouse"];
+evento = ["Expo CPU", "Senai Computer Week ", "Front-End Ultimate Frontier", "São Paulo Front-End Week" ];
+idade_participante = [16, 22, 35,31];
+data_evento = [[24,11,21],[12,12,21],[21,08,21],[12,11,21]];
+data_atual = [30, 10, 21];
 
+var num_participantes = 4;
 
 if (num_participantes >= 100)
 {
-    console.log("O Cadastro de participantes já atingiu o seu limite máximo")
+    console.log("\nO Cadastro de participantes já atingiu o seu limite máximo\n")
 };
 
 
-console.log("\nLista de participantes e eventos\n")
+console.log("\nLista de participantes e eventos\n");
 
-for(let i = 0; i < 3; i++){
+// Loop para verificar a situaçao de cada cadastro e posterior exibiçao na tela
+
+for(let i = 0; i < 4; i++){
     console.log(`Participante: ${participantes[i]} \nEvento: ${evento[i]} \nIdade: ${idade_participante[i]}\nData do evento: ${data_evento[i][0]}/${data_evento[i][1]}/${data_evento[i][2]}\n`)
     if(idade_participante[i] < 18)
     {
