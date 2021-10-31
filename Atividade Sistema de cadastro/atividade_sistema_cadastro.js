@@ -32,3 +32,40 @@ Enquanto quantidades de participantes menor que 100;
                 
 Exibir na tela lista de participantes e palestrantes por evento;
 */
+
+participantes = ["João Algoritmo", "Maria Pecê", "André Transistor"];
+evento = ["Expo CPU", "Senai Week Computer", "São Paulo Front-End Week" ];
+idade_participante = [16, 22, 35];
+data_evento = [[24,11,21],[12,12,21],[21,08,21]]
+data_atual = [30, 10, 21]
+
+var num_participantes = 3;
+
+
+if (num_participantes >= 100)
+{
+    console.log("O Cadastro de participantes já atingiu o seu limite máximo")
+};
+
+
+console.log("\nLista de participantes e eventos\n")
+
+for(let i = 0; i < 3; i++){
+    console.log(`Participante: ${participantes[i]} \nEvento: ${evento[i]} \nIdade: ${idade_participante[i]}\nData do evento: ${data_evento[i][0]}/${data_evento[i][1]}/${data_evento[i][2]}\n`)
+    if(idade_participante[i] < 18)
+    {
+        console.log("Situação cadastro: Cadastro não realizado - Participante menor de idade\n")
+    }
+    else if (data_evento[i][2] < data_atual[2])
+    {
+        console.log("Situação cadastro: Cadastro não realizado - Data do evento inválida\n")
+    }
+    else if (data_evento[i][0] < data_atual[0] && data_evento[i][1] < data_atual[1])
+    {
+        console.log("Situação cadastro: Cadastro não realizado - Data do evento inválida\n")
+    }
+    else
+    {
+        console.log("Situação cadastro: Cadastro realizado com sucesso\n")
+    }    
+};
