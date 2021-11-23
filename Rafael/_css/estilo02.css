@@ -1,0 +1,40 @@
+.posicao{
+    position: absolute;
+    width: 170px;
+    height: 100px;
+    font-family: arial;
+    font-size: 16px;
+    font-weight: bold;
+}
+#fundo{
+    top: 0px;
+    left: 250px;
+    width: 1100px;
+    height: 130px;
+    background-color: black;
+    border: solid 3px #000;
+    z-index: 3;
+}
+
+#azul{
+    top: 130px;
+    left: 250px;
+    background-color: #ffffff;
+    width: 1100px;
+    height: 600px;
+    background-color: blue;
+    border: solid 3px black;
+    z-index: 2;
+}
+#branco{
+    top: 730px;
+    left: 250px;
+    background-color: #ffffff;
+    width: 1100px;
+    height: 70px;
+    border: solid 3px black;
+    z-index: 1;
+}
+p{
+  text-align: center;  
+}
