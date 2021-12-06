@@ -1,85 +1,112 @@
-.posicao{
-    position: absolute;
-    width: 170px;
-    height: 100px;
-    font-family: arial;
-    font-size: 16px;
-    font-weight: bold;
+* {
+    box-sizing: border-box;
+    margin: 0%;
 }
+body {
+    margin: 0px;
+}
+
 #container{
+    position: relative;
     top: 020px;
-    left: 250px;
-    width: 1000px;
-    height: 900px;
-    background-color: white;
-    border: solid 2px #000;
-    
+    left: 150px;
+    width: 996px;
+    height: 616px;
+    padding: 0px;
+    background-color: black;
+    border: solid 1px #ADD8E6;
 }
 
 #banner{
-    top: 20px;
-    left: 250px;
+    position: absolute;
+    top: 0px;
     background-color: #ffffff;
-    width: 1000px;
-    height: 150px;
-    background-color: blue;
-    border: solid 2px black;
-    
+    width: 100%;
+    height: 112px;
+    border: solid 1px #ADD8E6;
+    border-bottom: transparent;
+    background-image: url("/_img/chess_banner700.jpg");
+    background-color: #000;
+    background-position: center center;
+}
+
+#containerInterno {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: black;
+    color: #000;
+    margin: 0px;
 }
 #link{
-    top: 170px;
-    left: 250px;
-    background-color: #ffffff;
-    width: 100px;
-    height: 750px;
-    border: solid 2px black;
     
+    background-color: black;
+    width: 15%;
+    height: inherit;
+    padding: 5px;
+    border: solid 1px #ADD8E6;
+    float: left;
+    color: white;
 }
 #texto{
-    top: 170px;
-    left: 350px;
-    background-color: #ffffff;
-    width: 300px;
-    height: 750px;
-    border: solid 2px black;
-   
+    background-color: black;
+    width: 55%;
+    height: inherit;
+    border: solid 1px #ADD8E6;
+    float: left;
+    color: white;
+    padding: 10px;
+
 }
 
-#video1{
-    top: 170px;
-    left: 650px;
-    background-color: #ffffff;
-    width: 300px;
-    height: 375px;
-    border: solid 2px black;
+#container #containerInterno #containerVideos {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    float: right;
+    margin:0%;
+
+    background-color:black;
+    display: flexbox;
+    border: solid 1px #ADD8E6;
+    width: 30%;
+    height: inherit;
+}
+
+#container #containerVideos #video1{
+    float: right;
+ 
+}
+
+#container #containerVideos #video2{
+
+    float: left;
+
+}
+
+#container #containerVideos #video3{
+    top: 0px;
+    float: right;
+
+}
+
+#container #containerVideos #video4{
+    top: 0px;
+    float: left;
+
+}
+
+#container #containerVideos .videos {
+    position: relative;
     
+    margin: 0%;
+    padding: 0%;
+    height: 250px;
+    width: 50%;
+    border: solid 1px #ADD8E6;
 }
 
-#video2{
-    top: 170px;
-    left: 950px;
-    background-color: #ffffff;
-    width: 300px;
-    height: 375px;
-    border: solid 2px black;
-    
-}
-
-#video3{
-    top: 545px;
-    left: 650px;
-    background-color: #ffffff;
-    width: 300px;
-    height: 375px;
-    border: solid 2px black;
-   
-}
-
-#video4{
-    top: 545px;
-    left: 950px;
-    background-color: #ffffff;
-    width: 300px;
-    height: 375px;
-    border: solid 2px black;
-}
