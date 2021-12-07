@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+}
+body {
+    margin: 0px;
+}
+
+#container{
+    position: relative;
+    top: 020px;
+    left: 150px;
+    width: 996px;
+    height: 616px;
+    padding: 0px;
+    background-color: black;
+    border: solid 1px #ADD8E6;
+}
+
+#banner{
+    position: absolute;
+    top: 0px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 112px;
+    border: solid 1px #ADD8E6;
+    border-bottom: transparent;
+    background-image: url("/_img/chess_banner700.jpg");
+    background-color: #000;
+    background-position: center center;
+}
+
+#containerInterno {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    background-color: black;
+    color: #000;
+    margin: 0px;
+}
+#link{
+    
+    background-color: black;
+    width: 15%;
+    height: inherit;
+    padding: 5px;
+    border: solid 1px #ADD8E6;
+    float: left;
+    color: white;
+}
+#texto{
+    background-color: black;
+    width: 55%;
+    height: inherit;
+    border: solid 1px #ADD8E6;
+    float: left;
+    color: white;
+    padding: 10px;
+
+}
+
+#container #containerInterno #containerVideos {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    float: right;
+    margin:0%;
+
+    background-color:black;
+    display: flexbox;
+    border: solid 1px #ADD8E6;
+    width: 30%;
+    height: inherit;
+}
+
+#container #containerVideos #video1{
+    float: right;
+ 
+}
+
+#container #containerVideos #video2{
+
+    float: left;
+
+}
+
+#container #containerVideos #video3{
+    top: 0px;
+    float: right;
+
+}
+
+#container #containerVideos #video4{
+    top: 0px;
+    float: left;
+
+}
+
+#container #containerVideos .videos {
+    position: relative;
+    
+    margin: 0%;
+    padding: 0%;
+    height: 250px;
+    width: 50%;
+    border: solid 1px #ADD8E6;
+}
+

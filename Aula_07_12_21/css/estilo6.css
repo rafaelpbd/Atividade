@@ -1,28 +1,33 @@
 * {
     box-sizing: border-box;
     margin: 0%;
+    padding: 0%;
 }
 body {
-    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: blueviolet;
+    overflow: hidden;
+    min-height: 100vh;
 }
 
 #verificacao {
     position: absolute;
-    margin-left: 650px;
-    margin-top: 250px;
     
     border: 4px black solid;
     border-radius: 5px;
+    align-items: center;
+
     width: 400px;
     height: 300px;
     background-color: blue;
 }
 #botoes {
-    position: relative;
-    top: 75%;
-    transform: translateY(-50%);
-    transform: translateX(35%);
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
     border: 2px solid transparent;
     width: max-content;
 
@@ -41,6 +46,7 @@ p {
         color: white;
         border-style: outset;
         border-color: #0066A2;
+        border-radius: 5px;
         height: 50px;
         width: 100px;
         font: bold 15px arial, sans-serif;

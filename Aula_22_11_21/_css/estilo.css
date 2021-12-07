@@ -1,0 +1,16 @@
+/*img{
+    position: relative;
+    left: 30px;
+    top: 60px;
+    width: 590px;
+    height: 350px;
+}
+*/
+#img{
+    float: left;
+    width: 15%;
+}
+p{
+    font-size: 30px;
+    margin-top: 0px;
+}
