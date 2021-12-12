@@ -16,7 +16,7 @@ body {
     position: absolute;
     
     border: 4px black solid;
-    border-radius: 5px;
+    border-radius: 8px;
     align-items: center;
 
     width: 400px;
@@ -51,6 +51,5 @@ p {
         width: 100px;
         font: bold 15px arial, sans-serif;
         text-shadow:none;
-        margin-right: 10px;
-        
+        margin-right: 10px;        
 }
